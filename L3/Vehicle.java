@@ -41,6 +41,13 @@ static class Car {
 	public void setBodycolor(String body_color) {
 		this.body_color=body_color;
 	}
+	public void spec() {
+		System.out.println("The specs for this car are:");
+		System.out.println(type);
+		System.out.println(no_seats);
+		System.out.println(fuel);
+		System.out.println(body_color);
+	}
 }
 
 	public static void main(String[] args) {
@@ -58,6 +65,16 @@ static class Car {
 		System.out.println(newCar.getBodycolor());
 		System.out.println(newCar.getSeats());
 		System.out.println(newCar.getType());
+		if(myCar.getSeats()>newCar.getSeats())
+		{
+			System.out.println("My car has more seats");
+		}
+		else if(myCar.getSeats()<newCar.getSeats())
+		{
+				System.out.println("The new car has more seats");
+		}else {
+			System.out.println("They have the same number of seats");
+		}
 	}
 
 }
